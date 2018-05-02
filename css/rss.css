@@ -1,0 +1,58 @@
+body {
+	font-family: helvetica, arial, sans-serif;
+}
+@media (min-width: 600px) { /* Media query der kører når viewport-bredden er 600px - bemærk, at siden det originale
+	body font-family kaldes først, er det stadig gældende - obs på rækkefølgen*/
+	.nyheds-container {
+		display: inline-block;
+		width: 200px;
+	}
+}
+@media (min-width:960px) {
+
+	.nyheds-container {
+		width: 300px;
+	}
+}
+
+
+h1 {
+	text-align: center;
+}
+.nyheds-container:hover{
+	outline: 3px solid black;
+}
+
+.nyheds-container {
+	border: 1px grey solid;
+	margin: 1em;
+	padding: 1em;
+	-webkit-border-radius: 10px; /* Vendor prefix der gør features kompatible med ældre/andre browsere */
+	-moz-border-radius: 10px;
+	border-radius: 10px;	/*Skal altid slutte med den kanoniske, når man bruger vendor prefixes */
+}
+.nyheds-tidsstempel {
+	background-color: black;
+	color: white;
+	padding: .25em;
+}
+}
+.nyheds-link a {
+	color: darkblue;
+}
+.nyheds-link {
+	text-align: right;
+	color: darkblue;
+}
+.usynlig .nyheds-tekst {
+	display: none;
+}
+.nyheds-indhold {
+	cursor: pointer;
+}
+.nyheds-indhold img {
+	width: 100%;
+}
+.nyheds-billede {
+
+}
